@@ -1,0 +1,25 @@
+{
+    "name": "surajgusain/tddworkshop",
+    "description": "TDD workshop for practice",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Suraj Gusain",
+            "email": "surajgusain@djalexander.in"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.3",
+        "phpmd/phpmd": "~2.4",
+        "squizlabs/php_codesniffer": "~2.6",
+        "sebastian/phpcpd": "*",
+        "phpmetrics/phpmetrics": "*"
+    },
+    "autoload": {
+        "psr-4": {"tdd\\": "src/tdd"}
+    },
+    "autoload-dev": {
+        "psr-4": {"tdd\\": "tests/tdd"}
+    }
+}
