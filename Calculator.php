@@ -6,14 +6,13 @@ use tdd\tddworkshop\Calculator;
 
 $calculator = new Calculator();
 
-if(!isset($argv[1])) {
+if (!isset($argv[1])) {
     echo 'Operation missing ' . PHP_EOL;
-    exit(0); 
-} 
+    exit(0);
+}
 
-try{
-
-    switch($argv[1]) {
+try {
+    switch ($argv[1]) {
         case 'add':
             $numbers = isset($argv[2]) ? $argv[2] : '';
             echo $calculator->calculate('add', $numbers) . PHP_EOL;
@@ -26,8 +25,7 @@ try{
     
         default:
             echo 'Please check the operator' . PHP_EOL;
-    }                      
-
-} catch(\InvalidArgumentException $e) {
+    }
+} catch (\InvalidArgumentException $e) {
     echo 'Error: ' . $e->getMessage() . PHP_EOL;
 }
